@@ -1,0 +1,202 @@
+/*header.css*/
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+   /* background-color: rgba(255, 255, 255, 0.9);*/
+    z-index: 1;
+}
+
+header .header-inner {
+    width: 100%;
+    height: 80px;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    /*background-color: darkseagreen;*/
+}
+
+header .header-inner .logo {
+    width: 150px;
+    height: 80px;
+    margin-right: 5%;
+    float: left;
+    position: relative;
+    
+   
+    /* background-color: yellow;*/
+}
+header .header-inner .color-logo{
+    position: absolute;
+     height: 80px;
+  opacity: 0;
+}
+
+header .header-inner .logo a {
+    width: 100%;
+    height: 100%;
+}
+
+header .header-inner .logo img {
+   height: 80px;
+}
+header .header-inner .color-logo img {
+   height: 80px;
+}
+header nav {
+    width: 70%;
+    height: 100%;
+    line-height: 80px;
+    float: left;
+   /* background-color: antiquewhite;*/
+}
+
+header nav .gnb {
+    width: 100%;
+    height: 100%;
+    
+}
+
+header nav ul.gnb li {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    /*border-bottom:3px solid darkorange;*/
+}
+
+header nav .gnb li a {
+    display: block;
+color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+/*대메뉴 hover시 underline*/
+header nav .gnb li a .gnb-border {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+    background-color: #ff8c00;
+}
+
+header nav .gnb li:hover .gnb-border {
+    transform: scale(1);
+}
+
+header nav .gnb li:hover a {
+    color: #fd8204;
+
+}
+
+header .menu-btn{
+    width:25px;
+    height: 20px;
+    /*outline: 1px solid red;*/
+    float: left;
+    margin-left:40px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+header .menu-btn:hover span{
+    background-color:#fd8204;
+}
+header .menu-btn span{
+    width:100%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+}
+
+header .menu-btn span:first-child{
+    top:0; 
+}
+header .menu-btn span:nth-child(2){
+    top:50%;
+    transform: translateY(-50%);
+}
+header .menu-btn span:last-child{
+    bottom: 0;
+}
+
+/*x-activ 버튼이 x로 바꾸기*/
+/*https://codepen.io/jaehee/pen/LbGQrR*/
+header .x-active span:first-child{
+    transform: translateY(10px);
+    transform: rotate(45deg);
+    top: 8px;
+    transition: all .3s;
+}
+
+header .x-active span:nth-child(2){
+   left:25px;
+    transition:all .3s; 
+}
+header .x-active span:last-child{
+    transform: translateX(10px);
+    transform: rotate(-45deg);
+    top: 8px;
+     transition: all .3s;
+}
+header .sub {
+    width: 100%;
+    height: 200px;
+    background: #fff;
+
+    display: none;
+}
+
+header .sub .sub-inner {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 100%;
+    /*outline: 1px solid yellow;*/
+    margin: 0 auto;
+}
+
+header .sub .sub-inner .smenu-wrap {
+    width: 70%;
+    height: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-left: 214px;
+    /*background: pink;*/
+}
+
+.sub .sub-inner .smenu {
+    width: 20%;
+
+    float: left;
+    background: #fff;
+}
+
+.sub .sub-inner .smenu li {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.sub .sub-inner .smenu li a{
+    font-weight: bold;
+}
+.sub .sub-inner .smenu li:hover a {
+    color: #ff8c00;
+    font-weight: 800;
+}

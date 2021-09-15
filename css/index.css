@@ -1,0 +1,752 @@
+@charset"utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+
+
+
+/**body****/
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+
+/****main*******/
+main {
+
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    position: relative;
+
+
+}
+
+main .main-slide-box {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+display: block;
+    position: relative;
+}
+
+main .main-slide-box .main-slide-grp {
+    width: 300%;
+    position: relative;
+    left: 0;
+}
+
+main .main-slide-box .main-slide-grp li {
+    float: left;
+    width: 33.333%;
+
+    display: block;
+}
+
+main .main-slide-box .main-slide-grp li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pager {
+    width:105px;
+    display: inline-block;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+.pager ul{
+    width:80%;
+    float:left;
+}
+
+.pager ul li {
+    float: left;
+    padding: 5px;
+    color: #fff;
+    
+
+}
+.pager ul li span{
+    width:15px;
+    height: 15px;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px #000;
+    margin-top: 3px;
+}
+.pager ul .selB span{
+   background-color: #ff8c00;
+}
+.pager .stopBtn{
+    width: 15%;
+    float: right;
+    height: 20px;;
+    cursor: pointer;
+ 
+}
+
+.pager .playBtn{
+    width: 15%;
+    float: right;
+    height: 20px;;
+    cursor: pointer;
+    display: none;
+}
+.pager .playBtnH{
+    
+    width: 15%;
+    float: right;
+    height: 20px;;
+    cursor: pointer;
+    display: none;
+}
+
+.pager .stopBtn:hover span{
+    background-color:#ff8c00;
+}
+.stopBtn span{
+    margin-top: 6px;
+    display: block;
+   
+    width:5px;
+ height: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px; 
+}
+.stopBtn span:first-child{
+    float: left;
+}
+.stopBtn span:nth-child(2){
+    float: right;
+}
+/*section*/
+#products {
+
+    width: 100%;
+    height: 700px;
+
+    background: url(../img/fmain2-2.png) no-repeat;
+    background-size: cover;
+}
+
+
+#products .products-inner {
+    width: 1240px;
+    height: 500px;
+    /* outline: 2px solid red;*/
+    margin: 0 auto;
+    padding: 100px 0;
+
+    position: relative;
+}
+
+#products .products-inner .products-show {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    /*overflow: hidden;*/
+    float: left;
+
+}
+
+
+
+#products .products-inner .products-new li {
+   position: absolute;
+}
+
+
+
+#products .products-slide {
+    float: right;
+    width: 710px;
+    height: 100%;
+    /*outline: 1px solid lime;*/
+    position: relative;
+}
+
+#products .products-slide .product-title {
+    width: 350px;
+    height: 245px;
+   
+    position: relative;
+    /*background-color: red;*/
+    z-index: 1;
+    /*box-sizing: border-box;
+    padding: 10px;*/
+    color: #fff;
+    float: left;
+
+
+}
+
+#products .product-title h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+
+
+}
+
+#products .product-title p {
+    margin: 10px 0;
+}
+
+#products .product-title > div.arrBtn {
+    float: left;
+    margin-right: 20px;
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+#products .product-title .arrBtn img {
+    display: block;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#products .product-title .lBtn {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 10px;
+    padding-left: 9px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+#products .product-title .lBtn:hover {
+/*
+    color: #fff;
+    background-color: #ff8c00;
+*/
+    background-color: #333;
+}
+
+
+
+#products .product-title .rBtn {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 10px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+#products .product-title .rBtn:hover {
+    color:#fff;
+    background-color: #333;
+}
+
+
+.products-slide .item-wrap {
+/*background-color: rgba(225,225,225,0.8);*/
+    width: 710px;
+    height: 100%;
+   position: absolute;
+ opacity: 0;
+    transition: opacity 0.3s;
+   
+    /*outline: 2px solid yellow;*/
+    
+
+
+}
+
+
+.products-slide .item-wrap li {
+    width: 340px;
+    height: 235px;
+    background-color: #fff;
+    position: relative;
+}
+
+.products-slide .item-wrap li:first-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.products-slide .item-wrap li:nth-child(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.products-slide .item-wrap li:last-child {
+    position: absolute;
+    bottom: 0;
+}
+
+.products-slide .item-wrap li img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+
+
+
+}
+
+.products-slide .item-wrap li p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    /*position: absolute;
+    display: inline-block;*/
+
+    line-height: 0px;
+
+}
+
+/****section #service***/
+
+#service {
+    width: 100%;
+    height: 300px;
+    margin: 100px 0;
+    /*  background: darkseagreen;*/
+}
+
+#service .service-inner {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#service .service-inner .sbox {
+    width: 640px;
+    height: 300px;
+    float: left;
+    padding: 40px 0;
+    padding-left: 80px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+#service .service-inner .sbox h3 {
+    font-size: 1.5rem;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+#service .service-inner .leftbox {
+    background-color: #cac3bb;
+}
+
+#service .service-inner .leftbox .store {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+
+}
+
+#service .service-inner .leftbox .map {
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+        display: none;
+}
+
+.leftbox .map img {
+    width: 110px;
+}
+
+#service .service-inner .rightbox {
+    background-color: #9b8bba;
+    position: relative;
+}
+
+#service .service-inner .rightbox .phone {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+#service .service-inner .rightbox p {
+    margin: 10px 0;
+}
+
+#service .service-inner .sbox a {
+    float: left;
+    position: absolute;
+    top: 45%;
+    font-size: 18px;
+    /*border:1px solid ;*/
+    padding: 4px;
+
+}
+
+.sbox a:hover {
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+}
+
+.service-inner .rightbox .delivery {
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+    display: none;
+}
+
+.service-inner .rightbox .delivery img {
+    width: 90px;
+}
+
+#promotion {
+    margin: 100px 0;
+    width: 100%;
+}
+
+#promotion .promotion-inner {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#promotion .promotion-inner h2 {
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /*font-size: 18px;*/
+    font-size: 24px;
+    font-size: 1.5rem;
+    /*background-color: aquamarine;*/
+}
+
+#promotion .promotion-inner .mbtn {
+    font-weight: bold;
+
+}
+
+#promotion .promotion-inner .mbtn:hover {
+    color: #ff8c00;
+    text-decoration: solid underline 2px;
+
+}
+
+#promotion .promotion-inner > a {
+    float: right;
+    
+}
+
+
+#promotion .p-list li {
+
+    float: left;
+    margin-left: 26.6666px;
+
+}
+#promotion .p-list li:first-child {
+    margin: 0;
+}
+
+#promotion .p-list li .img-box {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#promotion .p-list li .img-box img {
+    display: block;
+    width: 100%;
+}
+
+#promotion .p-list li .p-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+#promotion .p-list li a.img-box:hover img {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+#promotion .p-list li .readbtn{
+    font-size: 16px;
+    font-weight: 500;
+    /*font-weight: bold;*/
+}
+#promotion .p-list li .readbtn:hover {
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+
+
+
+#sns {
+    width: 100%;
+    height: 776px;
+    background: #000;
+    position: relative;
+}
+
+#sns .sns-bg-grp {
+    position: absolute;
+
+
+    height: 100%;
+    /*outline: 2px solid red;*/
+
+    display: none;
+}
+
+#sns .sns-bg-grp .bg-red {
+    position: absolute;
+    top: 80px;
+    left: 610px;
+}
+
+#sns .sns-bg-grp .bg-og {
+    position: absolute;
+    left: 870px;
+    top: 150px;
+}
+
+#sns .sns-bg-grp .bg-remone {
+    position: absolute;
+    left: 750px;
+    top: 300px;
+
+}
+
+#sns .sns-bg-grp .bg-herb {
+    position: absolute;
+    left: 370px;
+    top: 340px
+}
+
+#sns .sns-bg-grp .bg-galic {
+    position: absolute;
+    bottom: 50px;
+    left: 310px;
+}
+
+#sns .sns-bg-grp .bg-honey {
+    position: absolute;
+    top: 280px;
+    left: 1500px;
+
+}
+
+#sns .sns-wrap {
+   
+    height: 100%;
+    margin: 0 auto;
+    /*background: pink;*/
+    position: relative;
+
+}
+
+#sns .sns-wrap .sns-top-box {
+    width: 1200px;
+    margin: 0 auto;
+    height: 350px;
+    padding-top: 60px;
+    /*background: pink;*/
+    position: relative;
+
+}
+
+
+#sns .sns-wrap .s-title {
+    color: #fff;
+
+    width: 300px;
+    height: 200px;
+
+    /* background: blue;*/
+
+}
+
+#sns .sns-wrap .s-title h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+#sns .sns-wrap .s-title p {}
+
+#sns .sns-wrap .s-title .sns-icon {
+    padding-top: 40px;
+
+
+
+}
+
+#sns .sns-wrap .s-title .sns-icon li {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+
+}
+
+.s-title .sns-icon li a img {
+
+    width: 40px;
+    height: 40px;
+}
+
+.sns-wrap .youtube {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+/*흘러가는 이미지 제이쿼리 구현추가*/
+.sns-wrap .flow-box{
+    /*보여지는부분*/
+    width:1210px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+    /*outline:2px solid yellow;*/
+    
+}
+
+
+.sns-wrap .insta-group {
+    position: relative;
+    width:3100px;
+    
+    height: 280px;
+    /*outline: 1px solid red;*/
+}
+
+.sns-wrap .insta-group li {
+    
+    float: left;
+    width: 280px;
+    margin-right:30px;
+    display: block;
+   
+}
+
+
+.sns-wrap .insta-group li img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+section#franchise {
+    width: 100%;
+    height: 500px;
+    background: url(../img/bg1.png) no-repeat center/cover;
+}
+
+#franchise .franchise-inner {
+    /*width: 270px;
+    height: 400px;*/
+    /*margin: 0 auto;
+    margin-right: 400px;*/
+    /*outline: 2px solid red;*/
+    
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#franchise h2 {
+    /*width:270px;*/
+    display: block;
+    /*font-size: 24px;*/
+    font-size: 30px;
+    color: #fff;
+    /*font-weight: 700;*/
+    position: absolute;
+    /*left: 0;*/
+    right: 100px;
+    top: 100px;
+    /*letter-spacing: 1.5px;*/
+    /*line-height: 40px;*/
+}
+#franchise h2 span {
+    font-weight: 700;
+}
+
+
+#franchise .btn-wrap {
+    position: absolute;
+    top: 250px;
+    right: 110px;
+    /*width: 100%;*/
+    /*outline: 3px solid lime;*/
+}
+
+#franchise .f-btn {
+    float: left;
+    width: 120px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-right: 10px;
+}
+
+#franchise .f-btn:hover{
+    background-color: #fff; 
+}
+#franchise .f-btn:hover a{
+    color: #333;
+    font-weight: bold;
+}
+#franchise .f-btn a {
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+}
+
+#franchise .b-btn {
+    /*float: right;*/
+    float: left;
+    width: 120px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+#franchise .b-btn:hover{
+    background-color: #fff;
+} 
+#franchise .b-btn:hover a{
+    color: #333;
+    font-weight: bold;
+}
+#franchise .b-btn a {
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+}

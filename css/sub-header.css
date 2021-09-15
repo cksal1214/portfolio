@@ -1,0 +1,143 @@
+header {
+    width: 100%;
+    height: 80px;
+    /* display: none;*/
+    position: fixed;
+    z-index: 1;
+    /* background-color: rgba(225,225,225,0.9);*/
+
+}
+
+header:hover {
+    background-color: rgba(320, 320, 320, 0.8);
+}
+
+nav:hover .gnb .menu-title a {
+    color: #333;
+}
+
+header:hover .menu-btn span {
+    background-color: #333;
+}
+
+header .header-inner {
+    width: 100%;
+    height: 80px;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    /*background-color: darkseagreen;*/
+}
+
+
+.header-inner .logo {
+    float: left;
+    /* outline: 1px solid ;*/
+    display: inline-block;
+    /*padding-left: 50px;*/
+    padding-right: 50px;
+    height: 80px;
+    position: relative;
+}
+
+.header-inner .color-logo {
+    position: absolute;
+    display: none;
+}
+
+.header-inner .color-logo img {
+    height: 80px;
+
+}
+
+.header-inner .logo a img {
+    height: 80px;
+}
+
+.header-inner nav {
+    float: left;
+    height: 350px;
+   
+   /* width: 950px;*/
+
+    position: relative;
+
+}
+
+.header-inner nav ul .menu-title {
+    width: 90px;
+    float: left;
+    padding: 0 50px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    /*outline: 1px solid red;*/
+     
+
+}
+
+nav .gnb .menu-title > a {
+    color: #fff;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+/*****/
+nav .gnb .smenu{
+
+}
+
+nav .gnb .smenu li {
+    float: none;
+    height: 50px;
+
+
+}
+
+
+.smenu li a {
+    color: #333;
+    font-size: 16px;
+    font-size: 1rem;
+
+    line-height: 50px;
+    font-weight: 600;
+
+
+}
+
+.menu-btn {
+    width: 25px;
+    height: 20px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+header .menu-btn span {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+
+}
+
+header .menu-btn span:first-child {
+    top: 0;
+}
+
+header .menu-btn span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .menu-btn span:last-child {
+    bottom: 0;
+}

@@ -1,0 +1,46 @@
+/***reset****/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+
+}
+
+ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+img {
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+

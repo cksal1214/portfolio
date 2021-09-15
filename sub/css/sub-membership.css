@@ -1,0 +1,284 @@
+/*sub-membership.css*/
+@charset"utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&display=swap');
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/*main*/
+
+main {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url(../img/giftbg2.png) no-repeat top/cover;
+}
+
+main .title {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    font-size: 32px;
+    font-size: 2rem;
+
+    color: #fff;
+
+}
+
+main .title h1 {
+    font-weight: 600;
+
+}
+
+main .pageNabi {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #ff8c00;
+
+}
+
+main .pageNabi ul {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+main .pageNabi ul li {
+    float: left;
+    line-height: 35px;
+
+}
+
+main .pageNabi ul li a {
+    color: #fff;
+}
+
+main .pageNabi ul li a:hover {
+
+    text-decoration: underline;
+}
+
+main .pageNabi ul li a img {
+    margin-top: 2px;
+    height: 13px;
+}
+
+/**section***/
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section .menuBtn{
+    width: 1280px;
+    height:40px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 80px;
+   /* outline: 1px solid #333;*/
+}
+
+section .menuBtn ul{
+    float: right;
+}
+section .menuBtn ul li{
+    float: left;
+    
+}
+section .menuBtn ul li:hover{
+    background-color:#ff8c00 ;
+    border-radius: 10px;
+    
+}
+section .menuBtn ul li:hover a{
+    color: #fff;
+    font-weight: 500;
+   /* border: 1.5px solid #ff8c00;*/
+}
+section .menuBtn ul li a{
+    width: 110px;
+    height:40px;
+    line-height: 40px;
+    border: 1.5px solid #ff8c00;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff8c00;
+}
+
+section .title{
+    width: 100%;
+    height: 250px;
+    background-color: #ccc;
+}
+
+section .title .title-inner{
+    
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+section .title .title-inner h2{
+    padding-top: 50px;
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+section .title .title-inner p{
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: 1.125rem;
+    line-height: 30px;
+}
+
+section .benefitBox{
+    width: 1280px;
+    height: 500px;
+    border: 1px solid #d1b972;
+    border-radius: 20px;
+    margin: 80px auto;
+}
+section .benefitBox ul{
+    width: 85%;
+    height: 450px;
+    /*border: 1px solid ;*/
+    margin: 25px auto;
+    
+}
+section .benefitBox ul li{
+    width: 360px;
+    height: 200px;
+    margin-bottom: 25px;
+    /*line-height: 200px;*/
+    text-align: center;
+    
+    float: left;
+    /*border: 1px solid yellow;*/
+}
+section .benefitBox ul li img{
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+section .benefitBox ul li .btitle{
+    font-weight: 800;
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin: 10px 0;
+   
+}
+section .benefitBox ul li .binfo{
+    font-size: 16px;
+    font-size: 1rem;
+    color: #777;
+}
+
+section .membership-qr{
+    width: 100%;
+    height: 300px;
+    margin: 80px 0;
+    margin-bottom: 200px;
+    background-color: #ccc;
+    position: relative;
+}
+
+section .membership-qr .qr-inner{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    outline: 1px solid ;
+}
+section .membership-qr .qr-inner .qr-title{
+    width: 340px;
+    height: 100%;
+    /*background: pink;*/
+    float: left;
+    
+}
+.qr-title h2{
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 900;
+    display: inline-block;
+    margin-top: 40px;
+}
+.qr-title>p{
+    width: 100%;
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-top: 30px;
+    line-height: 35px;
+    margin-left: 30px;
+   
+}
+section .membership-qr .qr-inner .a-qr{
+    float: left;
+    text-align: center;
+    margin-left: 100px;
+   
+}
+li.qrimg img{
+    height: 180px;
+}
+ li.appimg img{
+   width:150px; 
+}
+section .membership-qr .qr-inner .a-qr p{
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+section .membership-qr .qr-inner .i-qr{
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+    
+    
+}
+section .membership-qr .qr-inner .i-qr img{}
+section .membership-qr .qr-inner .i-qr p{
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+section .membership-qr .qr-inner .phonimg{
+    float: left;
+    
+}
+
+section .membership-qr .qr-inner .phonimg ul{}
+section .membership-qr .qr-inner .phonimg ul li{
+   
+}
+section .membership-qr .qr-inner .phonimg ul li.mobile img{
+    height: 300px;
+    margin-left: 150px;
+}
+section .membership-qr .qr-inner .phonimg ul li.hand{
+position: absolute;
+top: 200px;
+    right: 450px;
+}
+section .membership-qr .qr-inner .phonimg ul li.bubble{
+    position: absolute;
+    top: 10px;
+    right: 250px;
+}
+.phonimg ul li.bubble img{
+    width: 200px;
+}

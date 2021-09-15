@@ -1,0 +1,79 @@
+/*kyochon-footer.css*/
+
+footer {
+    width: 100%;
+    height: 450px;
+    background-color: #333;
+    color: #fff;
+    
+}
+
+footer .footer-wrap {
+    width: 80%;
+   
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    box-sizing: border-box;
+    /*outline: 1px solid #fff;*/
+    position: relative;
+}
+
+
+
+footer .footer-wrap .footer-logo {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    /* background: green;*/
+    float: left;
+}
+
+.footer-wrap .menu-list .menu-title {
+    float: left;
+    /*outline: 1px solid red;*/
+    padding-right: 180px;
+
+
+
+
+}
+
+.menu-list .menu-title .menu-sub {
+    color: #999;
+    margin-top: 20px;
+
+}
+
+.menu-list .menu-title .menu-sub li {
+    margin-bottom: 20px
+}
+
+.menu-title .menu-sub li a {
+    color: #999;
+}
+
+.menu-title .menu-sub li a:hover {
+    text-decoration: underline;
+}
+
+
+footer .footer-wrap .footer-info {
+    margin-top: 20px;
+    margin-left: 0px;
+    display: inline-block;
+    color: #999;
+    /*outline: 1px solid red;*/
+    position: absolute;
+    bottom: 100px;
+    left: 20%
+    
+    
+}
+
+.footer-info ul li {
+    float: left;
+    font-size: 15px;
+    margin-right: 10px;
+    
+}

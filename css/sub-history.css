@@ -1,0 +1,177 @@
+/*history.css*/
+
+
+@charset"utf-8";
+/*main*/
+
+main{
+    position: relative;
+    width:100%;
+    height: 500px;
+    background: url(../img/historybg.png) no-repeat top/cover; 
+}
+main .title{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-size: 2rem;
+    
+    color: #fff;
+    
+}
+main .title h1{
+    font-weight: 600;
+}
+main .pageNabi{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 40px;
+    background-color: #ff8c00;
+    
+}
+main .pageNabi ul{
+    width:1280px; 
+    margin: 0 auto;
+}
+
+main .pageNabi ul li{
+    float: left;
+    line-height: 35px;
+}
+main .pageNabi ul li a:hover{
+    
+    text-decoration: underline;
+}
+main .pageNabi ul li a img{
+    margin-top: 2px;
+    height: 13px;
+}
+
+
+/****section*******/
+section{
+    width:100%;
+    height: 100%;
+}
+
+.section-inner{
+    width:70%;
+  
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+      overflow: hidden;  
+}
+.section-inner h2{
+    text-align: center;
+    margin-top:40px; 
+    padding:34px 0;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.section-inner .centerLine{
+    width: 5px;
+    height: 100%;
+    background-color: #ccc;
+        display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-inner .dotbox{
+    position: absolute;
+   width:20px;
+   left: 50%;
+    transform: translateX(-50%);
+  
+   
+    
+}
+.section-inner .dotbox>li{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    float: none;
+   /* margin-top: 10px;*/
+    margin-bottom: 430px;
+   
+    
+}
+.section-inner .dotbox>li:first-child{
+    margin-top: 5px;
+}
+.section-inner ul{
+    width:100%;
+}
+.section-inner ul li{
+    width:50%;
+    height: 450px;
+    float: left;
+}
+
+.section-inner ul li.left{
+  
+    /*background-color: pink;*/
+    text-align: right;
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.section-inner ul li.left .imgbox{
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    
+}
+.section-inner ul li.right{
+    /*background-color: skyblue;*/
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.section-inner ul li.right .imgbox{
+    margin-left: 20px;
+}
+
+.section-inner ul .year{
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+.section-inner ul .date{
+    font-size: 18px;
+    font-size:1.125rem;
+    font-weight:600;
+}
+.section-inner ul .text p {
+    margin-bottom: 20px;
+}
+
+.imgbox{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+    
+}
+section .moreBtn{
+width: 50px;
+    height: 50px;
+    outline: 1px solid red;
+    margin-left: 50%;
+    margin-bottom: 50px;
+    transform: translateX(-50%);
+}
+section .moreBtn img{
+    width:50px;
+    height: 50px;
+}

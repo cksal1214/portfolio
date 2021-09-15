@@ -1,0 +1,134 @@
+@charset"utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/*main*/
+
+main{
+    position: relative;
+    width:100%;
+    height: 500px;
+    background: url(../img/ceobg3.png) no-repeat top/cover; 
+}
+main .title{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-size: 2rem;
+    
+    color: #fff;
+    
+}
+main .title h1{
+    font-weight: 600;
+}
+main .pageNabi{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 40px;
+    background-color: #ff8c00;
+    
+}
+main .pageNabi ul{
+    width:1280px; 
+    margin: 0 auto;
+}
+
+main .pageNabi ul li{
+    float: left;
+    line-height: 35px;
+}
+main .pageNabi ul li a:hover{
+    
+    text-decoration: underline;
+}
+main .pageNabi ul li a img{
+    margin-top: 2px;
+    height: 13px;
+}
+section{
+    width:100%;
+    height: 1000px;
+}
+
+section .section-inner{
+    width:1280px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.section-inner select{
+    height: 30px;
+    font-size: 16px;
+    font-size: 1rem;
+}
+section .section-inner h2{
+   /* outline: 1px solid red;*/
+    text-align: center;
+    margin:20px 0 30px;
+    display: block;
+    font-size: 24px;
+    padding-bottom: 10px;
+    /*border-bottom: 2px solid #333;*/
+    font-weight: 600;
+    
+    
+}
+section .section-inner .name{
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+section .section-inner .leftbox{
+    width:50%;
+    
+    height: 500px;
+    float: left;
+    overflow: hidden;
+/*    background-color: deepskyblue;*/
+}
+.section-inner .leftbox img{
+
+    margin-top: 20px
+}
+    
+
+section .section-inner .rightbox{
+    width: 50%;
+    height: 500px;
+    float: right;
+    /
+}
+
+.section-inner .content .rightbox .textbox{
+    width:550px;
+   /* height: 300px;*/
+    margin:30px auto;
+   /* overflow-y: scroll;*/
+    
+}
+
+.section-inner .date{
+    right: 60px;
+    bottom:60px;
+    position: absolute;
+    font-size: 28px;
+    font-weight: 300;
+   font-family: 'Nanum Pen Script', cursive;
+    color: #333;
+}
+
